@@ -1,0 +1,57 @@
+body {
+  background-color: black;
+}
+
+.top-of-page {
+  justify-content: center;
+}
+
+h1 {
+  align-items: center;
+  font-size: 30px;
+  background-color: maroon;
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+nav {
+  justify-content: space-evenly;
+  display: flex;
+  background-color: maroon;
+}
+
+.menu-list {
+  color: white;
+  list-style-type: none;
+  background-color: maroon;
+  text-transform: uppercase;
+  justify-content: flex-end;
+  font-weight: bolder;
+  font-size: 20px;
+  display: flex;
+}
+
+li {
+  margin: 15px;
+  padding: 10px;
+}
+
+li:hover {
+  background-color: white;
+  color: maroon;
+  padding: 10px;
+}
+
+.footer-list {
+  background-color: maroon;
+  color: white;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  display: flex;
+  font-weight: bolder;
+  justify-content: flex-end;
+}
