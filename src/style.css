@@ -1,20 +1,16 @@
-/* Import the Urbanist font */
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* Apply the Urbanist font to the entire page */
 body {
   font-family: Urbanist, sans-serif;
   background-color: rgb(253, 252, 240);
 }
 
-/* Ensure that the wrapper acts as a positioning context for its children */
 .wrapper {
   position: relative;
   margin: 30px;
   padding: 30px;
 }
 
-/* Style for the top section of the page */
 .top-of-page {
   justify-content: center;
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/119/087/original/skate-website.jpg?1710443567);
@@ -22,64 +18,55 @@ body {
   background-size: cover;
 }
 
-/* Style for the main heading */
 h1 {
   align-items: center;
   font-size: 50px;
   color: rgb(253, 252, 240);
 }
 
-/* Style for the menu */
 .menu {
   width: 100%;
   height: 50px;
   background-color: black;
 }
 
-/* Style for the menu items */
 .menu-list {
   color: white;
   list-style-type: none;
   text-transform: uppercase;
   display: flex;
-  padding: 15px; /* Adjust vertical padding to control the space around the text */
+  padding: 15px;
   justify-content: space-between;
   margin: 20px;
 }
 
-/* Style for individual menu items */
 li {
   justify-content: space-evenly;
 }
 
-/* Style for menu items when hovered */
 li:hover {
   color: orange;
 }
 
-/* Ensure that the container acts as a positioning context for its children */
 .container {
   position: relative;
   display: inline-block;
   width: 100%;
 }
 
-/* Style for the main image */
 .bigphoto {
   display: block;
   width: 100%;
-  height: auto; /* Maintain aspect ratio */
+  height: auto;
 }
 
-/* Adjust the paragraph within the text overlay */
 .text p {
-  margin: 0; /* Remove any default margin */
+  margin: 0;
   display: block;
 }
 
-/* Style for the footer menu */
 .footer-list {
-  margin: 0; /* Remove any margin */
+  margin: 0;
   padding: 10px;
   background-color: black;
   color: white;
@@ -90,9 +77,8 @@ li:hover {
   justify-content: space-between;
 }
 
-/* Style for the footer section */
 footer {
-  text-align: center; /* Align footer content to the center */
+  text-align: center;
   font-size: 10px;
   font-weight: 200;
 }
