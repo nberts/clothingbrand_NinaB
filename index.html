@@ -3,8 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vans</title>
-    <link href="src/style.css" rel="stylesheet" />
+    <title>Vans - Off the Wall</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+      body {
+        font-family: Urbanist, sans-serif;
+        background-color: rgb(253, 252, 240);
+      }
+
+      .wrapper {
+        position: relative;
+        margin: 30px;
+        padding: 30px;
+      }
+
+      .top-of-page {
+        justify-content: center;
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/119/087/original/skate-website.jpg?1710443567);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      h1 {
+        align-items: center;
+        font-size: 50px;
+        color: rgb(253, 252, 240);
+      }
+
+      .menu {
+        width: 100%;
+        height: 50px;
+        background-color: black;
+      }
+
+      .menu-list {
+        color: white;
+        list-style-type: none;
+        text-transform: uppercase;
+        display: flex;
+        padding: 15px;
+        justify-content: space-between;
+        margin: 20px;
+      }
+
+      li {
+        justify-content: space-evenly;
+      }
+
+      li:hover {
+        color: orange;
+      }
+
+      .container {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+      }
+
+      .bigphoto {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .text p {
+        margin: 0;
+        display: block;
+      }
+
+      .footer-list {
+        margin: 0;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        list-style: none;
+        text-transform: uppercase;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 10px;
+        font-weight: 200;
+      }
+
+      .links:hover {
+        color: orange;
+      }
+    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
