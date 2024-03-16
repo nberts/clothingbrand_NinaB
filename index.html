@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/8f24e6bae0.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Vans - Off the Wall</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
@@ -14,8 +18,37 @@
 
       .wrapper {
         position: relative;
-        margin: 30px;
-        padding: 30px;
+        margin: 0 20px;
+        padding: 0px;
+      }
+
+      .personal {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        font-size: 14px;
+        margin-bottom: -20px;
+      }
+
+      .user-specific {
+        display: flex;
+        align-items: center;
+      }
+
+      .fa-solid {
+        color: black;
+        size: 20px;
+        padding: 10px;
+      }
+
+      .fa-solid:hover {
+        color: orange;
+      }
+
+      .user-stuff:hover {
+        color: orange;
+        text-decoration: underline;
+        font-style: italic;
       }
 
       .top-of-page {
@@ -23,6 +56,8 @@
         background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/119/087/original/skate-website.jpg?1710443567);
         background-repeat: no-repeat;
         background-size: cover;
+        line-height: 1;
+        margin-bottom: -35px;
       }
 
       h1 {
@@ -31,10 +66,22 @@
         color: rgb(253, 252, 240);
       }
 
+      .shipping {
+        display: flex;
+        font-size: 10px;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 166, 0, 0.719);
+        font-style: italic;
+        font-weight: 400;
+        margin: 0;
+      }
+
       .menu {
         width: 100%;
         height: 50px;
         background-color: black;
+        margin: 0;
       }
 
       .menu-list {
@@ -42,56 +89,148 @@
         list-style-type: none;
         text-transform: uppercase;
         display: flex;
-        padding: 15px;
-        justify-content: space-between;
-        margin: 20px;
-      }
-
-      li {
-        justify-content: space-evenly;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+        font-size: 14px;
+        font-weight: 100;
       }
 
       li:hover {
         color: orange;
+        font-style: italic;
+        text-decoration: underline;
+      }
+
+      .search-container {
+        position: relative;
+        display: inline-block;
+        align-items: right;
+        top: -25%;
+      }
+
+      .search-bar {
+        background-color: rgba(0, 0, 0, 0.555);
+        color: rgb(253, 252, 240);
+        font-size: 15px;
+        padding: 5px;
+        padding-left: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.685);
+        outline: none;
+      }
+
+      .fa-solid.fa-magnifying-glass {
+        color: white;
+        position: absolute;
+        left: 1px;
+        top: 50%;
+        transform: translateY(-50%);
       }
 
       .container {
         position: relative;
         display: inline-block;
         width: 100%;
+        margin-bottom: -10px;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0
+        ); /*Makes overlay transparent without hover*/
+        color: rgb(253, 252, 240);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 1; /*Make sure that overlay is above the image*/
       }
 
       .bigphoto {
+        position: relative;
         display: block;
         width: 100%;
         height: auto;
+        z-index: 0;
+      }
+      .container:hover .overlay {
+        background-color: rgba(0, 0, 0, 0.466);
+        opacity: 1;
       }
 
-      .text p {
-        margin: 0;
-        display: block;
+      h2 {
+        font-size: 20px;
+        font-weight: 300;
+        font-style: italic;
+      }
+
+      .shop-button {
+        background-color: rgba(0, 0, 0, 0);
+        color: rgb(253, 252, 240);
+        font-size: 15px;
+        font-weight: 100;
+        border: 2px solid rgb(253, 252, 240);
+        border-radius: 20px;
+        padding: 10px 20px;
+      }
+
+      .shop-button:hover {
+        background-color: rgb(253, 252, 240);
+        color: rgba(0, 0, 0, 0.63);
+        border: none;
+        font-style: italic;
+        text-decoration: underline;
+      }
+
+      .footer-menu {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
       }
 
       .footer-list {
         margin: 0;
-        padding: 10px;
+        padding: 15px;
         background-color: black;
         color: white;
         list-style: none;
         text-transform: uppercase;
         font-size: 12px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+      }
+
+      .links:hover {
+        color: orange;
+      }
+
+      .socials {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 10px;
+      }
+
+      .fa-brands:hover {
+        color: orange;
       }
 
       footer {
         text-align: center;
         font-size: 10px;
         font-weight: 200;
-      }
-
-      .links:hover {
-        color: orange;
+        margin-top: 20px;
       }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -103,22 +242,52 @@
   </head>
   <body>
     <div class="wrapper">
+      <div class="personal">
+        <form class="user-specific">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <div class="user-stuff">
+            <i class="fa-solid fa-user"></i>
+            <span class="signin-text">Sign In</span>
+          </div>
+        </form>
+      </div>
       <div class="top-of-page">
         <h1>VANS</h1>
       </div>
-      <nav class="menu">
-        <ul class="menu-list">
-          <li class="home">Home</li>
-          <li class="aboutus">About us</li>
-          <li class="shop">Shop</li>
-          <li class="charity">Charity</li>
-        </ul>
-      </nav>
+      <span class="shipping">
+        <p>*** <strong>free shipping</strong> on all orders over $100 ***</p>
+      </span>
+      <div>
+        <nav class="menu">
+          <ul class="menu-list">
+            <li class="home">Home</li>
+            <li class="aboutus">About us</li>
+            <li class="shop">Shop</li>
+            <li class="charity">Charity</li>
+            <li>
+              <div class="search-container">
+                <input
+                  class="search-bar"
+                  type="text"
+                  name="search-bar"
+                  placeholder="Search..."
+                />
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <div class="container">
         <img
           class="bigphoto"
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/119/087/original/skate-website.jpg?1710443567"
+          alt="photo of skateboarder doing jump"
         />
+        <div class="overlay">
+          <h2>Shop our latest collection now.</h2>
+          <button class="shop-button" type="submit">Shop</button>
+        </div>
       </div>
       <div class="footer-menu">
         <ul class="footer-list">
@@ -126,6 +295,12 @@
           <li class="contactus">contact us</li>
           <li class="faq">FAQ</li>
         </ul>
+        <div class="socials">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-tiktok"></i>
+        </div>
       </div>
     </div>
   </body>
